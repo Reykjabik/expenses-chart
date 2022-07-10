@@ -16,8 +16,6 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -38,81 +36,38 @@ Users should be able to:
 ## Mobile
 <img src='./images/mob_shot.png' width= 250px style='margin: 0 auto'>
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/Reykjabik/expenses-chart)
+- Live Site URL: [Live site URL here](https://reykjabik.github.io/expenses-chart/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SCSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Vanilla JS
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I really had to brush up on my Grid skills, as it had been a long while since I last used it. It is my first junior project here in FrontendMentor, so I had to finally put what I know of JS in use. I have studied JS many times in the past, but I have always found using it a much steeper learning curve than HTML or CSS. I understand most of the workings of the language, but getting to use it has been a bit trickier. Anyway, the first step is done.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I found loading JSON a much more complex task than I thought. I initially thought that a simple Google search would give me a sort of copy&paste answer, but I found so many ways of doing it, involving more advanced areas of JS that I still don't know about (promises, requests, etc) that I actually struggled doing this. Definitely honing my JS skills is my main aim here.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I though that I more or less am comfortable using flex and grid, but it seems I find centering certain items is still a pain. The prices that pop in when hovering are not exactly centered to their columns, and I couldn't find a way of doing so. I might need just one line in my CSS, I just couldn't figure out which one. 
+
+I find my CSS a but messy, and although I try to minimize it and delete redundancies at the end of each project, I still think there is a lot of room for improvement.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/) - I cannot really say the number of times I resorted to this website.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@reykjabik](https://www.frontendmentor.io/profile/reykjabik)
