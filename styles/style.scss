@@ -1,0 +1,25 @@
+@mixin flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+  
+  $soft-red: hsl(10, 99%, 65%);
+  $cyan: hsl(186, 34%, 60%);
+    
+  $dk-brown: hsla(25, 47%, 15%, .85);
+  $md-brown: hsla(28, 10%, 53%, .65);
+  $cream: hsl(27, 66%, 92%);
+  $v-pale-orange: hsl(33, 100%, 98%);
+
+@import "reset";
+@import "component";
+
+body {
+  min-height: 100vh;
+  background-color: $cream;
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
+  @include flex-center-center();
+}

@@ -1,0 +1,156 @@
+main {
+    width: 345px;
+    box-sizing: border-box;
+
+    .balance {
+        background-color: $soft-red;
+        color: $v-pale-orange;
+        padding: 1.3rem 1.1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        border-radius: .8rem;
+        margin-bottom: 1rem;
+
+        .my-balance {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            font-size: .94rem;
+            opacity: .75;
+        }
+
+        .balance-amount {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            margin: .0 0 .2rem;
+        }
+
+        img {
+            grid-row: 1 / 3;
+            width: 3.8rem;
+            padding-right: .2rem;
+            justify-self: end;
+            align-self: center;
+        }
+    }
+
+    .spending {
+        background-color: $v-pale-orange;
+        padding: 1.75rem 1.125rem;
+        border-radius: .8rem;
+
+        h1 {
+            font-size: 1.5rem;
+            color: $dk-brown;
+            font-weight: bolder;
+        }
+
+        .bar-chart {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 1fr 3fr 1fr;
+            grid-template-areas:
+            "bubble bubble bubble bubble bubble bubble bubble"
+            "bar bar bar bar bar bar bar"
+            "day day day day day day day";
+            margin-top: .75rem;
+            justify-items: space-around;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .bubble-list {
+                grid-area: bubble;
+                justify-content: space-evenly;
+
+                .bubble {
+                    @include flex-center-center;
+                    width: 110%;
+                    background-color: $dk-brown;
+                    visibility: hidden;
+                    color: white;
+                    font-size: .7rem;
+                    height:1rem;
+                    padding: .375rem;
+                    border-radius: .25rem;
+                }
+            }
+
+            .bar-list {
+                grid-area: bar;
+                height: 9.5rem;
+                margin-top: .25rem;
+
+                .bar {
+                    background-color: $soft-red;
+                    width: 2rem;
+                    align-self: end;
+                    border-radius: .25rem;
+
+                    &:hover {
+                        background-color: $cyan;
+                    }
+                }
+            }
+
+            .day-list {
+                grid-area: day;
+                font-size: .75rem;
+                color: $md-brown;
+                height: 2.25rem;
+
+                &>li {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+
+        hr {
+            border: 1.5px solid $cream;
+            opacity: .7;
+            margin-top: 0;
+        }
+
+        .month-stats {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 1.6rem;
+
+
+            .stats-label {
+                color: $md-brown;
+                font-weight: bolder;
+                font-size: .975rem;
+            }
+
+            #total-spent {
+                color: $dk-brown;
+                font-weight: bolder;
+                font-size: 1.85rem;
+                margin-top: .75rem;
+            }
+
+            .variation {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+
+                #variation-pct {
+                    font-size: .95rem;
+                    color: $dk-brown;
+                    font-weight: bolder;
+                }
+            }
+
+        }
+    }
+  }

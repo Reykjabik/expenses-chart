@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+</head>
+<body>
+  <main class="component">
+    <div class="balance">
+      <p class="my-balance">My balance</p>
+      <p class="balance-amount">$921.48</p>
+      <img src="./images/logo.svg">
+    </div>
+    <section class="spending">
+      <h1 class="title">Spending - Last 7 days</h1>      
+      <div class="bar-chart">
+        <ul class="bubble-list">
+          <li class="bubble"></li>
+          <li class="bubble"></li>
+          <li class="bubble"></li>
+          <li class="bubble"></li>
+          <li class="bubble"></li>
+          <li class="bubble"></li>
+          <li class="bubble"></li>
+        </ul>
+        <ul class="bar-list">
+          <li class="bar"></li>
+          <li class="bar"></li>
+          <li class="bar"></li>
+          <li class="bar"></li>
+          <li class="bar"></li>
+          <li class="bar"></li>
+          <li class="bar"></li>
+        </ul>
+        <ul class="day-list">
+          <li class="day">mon</li>
+          <li class="day">tue</li>
+          <li class="day">wed</li>
+          <li class="day">thu</li>
+          <li class="day">fri</li>
+          <li class="day">sat</li>
+          <li class="day">sun</li>
+        </ul>
+      </div>
+      <hr>
+      
+      <div class="month-stats">
+        <div class="total">
+          <h3 class="stats-label">Total this month</h3>
+          <h2 id="total-spent">$478.33</h2>
+        </div>
+        <div class="variation">
+          <p id="variation-pct">+2.4%</p>
+          <h3 class="stats-label">from last month</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+<script type='module' src="script/app.js"></script>
+</html>
